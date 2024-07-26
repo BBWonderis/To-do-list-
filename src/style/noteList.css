@@ -1,0 +1,20 @@
+.note-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.empty-element {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  align-items: center;
+}
+.empty-element img {
+  height: 80%;
+  margin-bottom: 10px;
+}
+.empty-element p {
+  font-size: 26px;
+}

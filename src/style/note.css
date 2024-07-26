@@ -1,0 +1,54 @@
+@import url("./css-settings.css");
+
+.note-element .note-functions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.note-element {
+  width: 100%;
+}
+.note-element .note-functions button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.note-element .note-functions .edit-button {
+  margin-left: auto;
+}
+.note-element .note-functions .edit-button:hover {
+  filter: invert(20%) sepia(83%) saturate(2433%) hue-rotate(208deg)
+    brightness(91%) contrast(89%);
+}
+.note-element .note-functions .remove-button:hover {
+  filter: invert(32%) sepia(96%) saturate(7481%) hue-rotate(357deg)
+    brightness(96%) contrast(118%);
+}
+.note-element hr {
+  border: 1px solid var(--main-color-light-mode);
+}
+
+.note-element .note-functions input[type="checkbox"] {
+  cursor: pointer;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin: 10px 10px 10px 0;
+  border: 1px solid var(--main-color-light-mode);
+  border-radius: 3px;
+}
+.note-element .note-functions input[type="checkbox"]::after {
+  content: url("./pictures/checkmark.svg");
+  display: none;
+}
+.note-element .note-functions input[type="checkbox"]:checked {
+  background-color: var(--main-color-light-mode);
+}
+.note-element .note-functions input[type="checkbox"]:checked:after {
+  display: block;
+}
+.note-element .note-functions p {
+  font-weight: 500;
+}

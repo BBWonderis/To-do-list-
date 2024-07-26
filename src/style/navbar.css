@@ -1,0 +1,92 @@
+@import url("./css-settings.css");
+:root {
+  --nav-bar-height: 2.5rem;
+  --border-radius: 8px;
+}
+.navigation h1 {
+  text-align: center;
+  font-weight: 500;
+  margin: 0px 0 20px 0;
+  padding-top: 20px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  justify-content: center;
+  height: var(--nav-bar-height);
+  width: 100%;
+  margin-bottom: 60px;
+}
+.nav-bar input,
+.nav-bar button {
+  min-height: 100%;
+}
+
+.nav-bar .search-note {
+  position: relative;
+  width: 45%;
+}
+.nav-bar .search-note input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+  padding-left: 15px;
+  border: 1px solid var(--main-color-light-mode);
+}
+.nav-bar .search-note input::placeholder {
+  color: rgb(218, 214, 214);
+}
+.nav-bar .search-note .search-icon {
+  position: absolute;
+  right: 5%;
+  bottom: 25%;
+}
+
+.nav-bar button {
+  background-color: var(--main-color-light-mode);
+  border: none;
+  border-radius: var(--border-radius);
+  width: var(--nav-bar-height);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-bar button:hover {
+  background-color: var(--hover-color-light-mode);
+}
+.nav-bar .select-notes .select-button {
+  width: calc(var(--nav-bar-height) + 3.1rem);
+  text-align: start;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar .select-notes .select-button p {
+  font-size: 80%;
+}
+.nav-bar .select-notes {
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar .select-notes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid var(--main-color-light-mode);
+  border-radius: var(--border-radius);
+  width: calc(var(--nav-bar-height) + 3rem);
+}
+.nav-bar .select-notes li {
+  font-size: 14px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.nav-bar .select-notes li:hover {
+  background-color: #8079fc4a;
+  overflow: hidden;
+}
