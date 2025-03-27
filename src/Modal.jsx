@@ -4,7 +4,6 @@ import "./style/modal.css";
 
 function Modal(props) {
   const [inputData, setInputData] = useState("");
-  console.log(props);
   function handleChange(event) {
     setInputData(event.target.value);
   }

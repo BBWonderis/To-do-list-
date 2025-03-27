@@ -5,7 +5,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 
 function App() {
-  const [selectionValue, setSelectionValue] = useState("ALL");
+  const [selectionValue, setSelectionValue] = useState("All");
   const [darkMode, setDarkMode] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [editMode, setEditMode] = useState({
